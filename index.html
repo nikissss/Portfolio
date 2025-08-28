@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Nikkii's Portfolio</title>
+
+<head>
+    <title>Nikki's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-<div id="home" class="hero">
-    <nav>
-        <h2 class="logo">NIK<span>KI</span></h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="main-container">
-        <div class="image">
-            <img src="profile2.png" alt="Nikki Kayastha">
-        </div>
-        <div class="content">
-            <h4>Hello, my name is</h4>
-            <h1>Nikki<span> Kayastha.</span></h1>
-            <h4>An aspiring software developer.</h4>
-            <div class="newslatter">
-                <a id="openPopup" class="btn">Send Mail</a>
+    <div id="home" class="hero">
+        <nav>
+            <h2 class="logo">NIK<span>KI</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="main-container">
+            <div class="image">
+                <img src="profile2.png" alt="Nikki Kayastha">
+            </div>
+            <div class="content">
+                <h4>Hello, my name is</h4>
+                <h1>Nikki<span> Kayastha.</span></h1>
+                <h4>An aspiring software developer.</h4>
+                <div class="newslatter">
+                    <a id="openPopup" class="btn">Send Mail</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-    
-<div id="popup" class="popup-overlay">
-    <div class="popup-content">
-        <span id="closePopup" class="close">&times;</span>
-        <h2>Send Me a Message</h2>
-        <form action="https://formsubmit.co/6681ba334f524f92fc23a73c3958b715" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Write your message here..." rows="5" required></textarea>
-            <input type="hidden" name="_captcha" value="false">
-            <input type="submit" value="Send Message" class="send-btn">
-        </form>
+
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2>Send Me a Message</h2>
+            <form action="https://formsubmit.co/6681ba334f524f92fc23a73c3958b715" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Write your message here..." rows="5" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="submit" value="Send Message" class="send-btn">
+            </form>
+        </div>
     </div>
-</div>
-<script>
-document.getElementById("openPopup").onclick = function() {
-    document.getElementById("popup").style.display = "block";
-}
-document.getElementById("closePopup").onclick = function() {
-    document.getElementById("popup").style.display = "none";
-}
-window.onclick = function(e) {
-    if (e.target == document.getElementById("popup")) {
-        document.getElementById("popup").style.display = "none";
-    }
-}
-</script>
+    <script>
+        document.getElementById("openPopup").onclick = function () {
+            document.getElementById("popup").style.display = "block";
+        }
+        document.getElementById("closePopup").onclick = function () {
+            document.getElementById("popup").style.display = "none";
+        }
+        window.onclick = function (e) {
+            if (e.target == document.getElementById("popup")) {
+                document.getElementById("popup").style.display = "none";
+            }
+        }
+    </script>
 
     <section id="about" class="about">
         <div class="main">
@@ -70,72 +75,123 @@ window.onclick = function(e) {
             <div class="about-text">
                 <h2>About Me</h2>
                 <h5>Developer<span> & Designer</span></h5>
-                <p>I am currently studying Computer Science and am a versatile developer with expertise in creating dynamic, responsive, and accessible user experiences for both web and mobile platforms. I focus on designing intuitive interfaces with smooth interactions and animations, while building secure, scalable backend systems that ensure reliable performance and efficient data management. My approach combines aesthetic design with technical precision to deliver complete, high-quality solutions.</p>
+                <p>I am currently studying Computer Science and am a versatile developer with expertise in creating
+                    dynamic, responsive, and accessible user experiences for both web and mobile platforms. I focus on
+                    designing intuitive interfaces with smooth interactions and animations, while building secure,
+                    scalable backend systems that ensure reliable performance and efficient data management. My approach
+                    combines aesthetic design with technical precision to deliver complete, high-quality solutions.</p>
             </div>
         </div>
     </section>
 
 
-
-    <section id="projects" class="projects">
-  <div class="title">
-    <h2>My Projects</h2>
-  </div>
-  
-  <div class="projects-container">
-    <div class="project-card">
-        <img src="dataquest1.jpg" alt="Project Screenshot" class="project-img">
-        <img src="dataquest.png" alt="Project Screenshot" class="project-img">
-      <h3>DataQuest</h3>
-      <p>A survey-creation-collection website built with React and Node.js, enabling users to create, share, and analyze surveys. 
-        Designed with a responsive interface and visualizations for smooth user experience.</p>
-    </div>
-
-    <div class="project-card">
-        <img src="yatra.png" alt="Project Screenshot" class="project-img">
-        <img src="yatra1.jpg" alt="Project Screenshot" class="project-img">
-      <h3>Yatra</h3>
-      <p>A mobile app for booking flights and reserving hotels, developed with Flutter, Dart, and Firebase. 
-        Provides an intuitive UI with secure real-time booking and data management.</p>
-    </div>
-
-    <div class="project-card">
-        <img src="kakshya1.jpg" alt="Project Screenshot" class="project-img">
-        <img src="kakshya2.jpg" alt="Project Screenshot" class="project-img">
-      <h3>Kakshya</h3>
-      <p>A school management web platform built using React, Node.js and MongoDB. 
-        Includes features for handling student records, schedules, and administrative tasks efficiently.</p>
-    </div>
-
-    <div class="project-card">
-        <img src="winkel.png" alt="Project Screenshot" class="project-img">
-      <h3>Winkel</h3>
-      <p>A multi-vendor e-commerce mobile app developed in Flutter, Dart with Firebase backend. 
-        Supports vendor management, product listings, and secure transactions.</p>
-    </div>
-
-    <div class="project-card">
-        <img src="book.jpg" alt="Project Screenshot" class="project-img">
-        <img src="book1.jpg" alt="Project Screenshot" class="project-img">
-      <h3>Book Recommender</h3>
-      <p>A recommendation website developed with python that suggests books based on user preferences. 
-        Designed for quick searches and reading suggestions.</p>
-    </div>
-
-    <div class="project-card">
-        <img src="football.jpg" alt="Project Screenshot" class="project-img">
-        <img src="football1.jpg" alt="Project Screenshot" class="project-img">
-      <h3>Football Data Analysis Website</h3>
-      <p>A data visualization platform built with Python, Streamlit, and Plotly, 
-        showcasing football datasets with interactive charts and insights.</p>
-    </div>
-
-  </div>
-</section>
-
-    <div id="skills" class="service">
+    <section id="skills" class="expertise-section">
         <div class="title">
-            <h2>Skills</h2>
+            <h2>My <span>Skills</span></h2>
+            <p>Technologies and Tools</p>
+            <h1></h1>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card"><img src="html.svg" alt="ReactJS">
+                <p>HTML</p>
+            </div>
+            <div class="skill-card"><img src="css.svg" alt="NextJS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-card"><img src="javascript.svg" alt="Streamlit">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card"><img src="react.svg" alt="Django">
+                <p>React</p>
+            </div>
+            <div class="skill-card"><img src="python.svg" alt="FastAPI">
+                <p>Python</p>
+            </div>
+            <div class="skill-card"><img src="dart.svg" alt="ExpressJS">
+                <p>Dart</p>
+            </div>
+            <div class="skill-card"><img src="mongodb.svg" alt="MongoDB">
+                <p>MongoDB</p>
+            </div>
+            <div class="skill-card"><img src="firebase.svg" alt="MySQL">
+                <p>Firebase</p>
+            </div>
+            <div class="skill-card"><img src="node.svg" alt="PostgreSQL">
+                <p>NodeJS</p>
+            </div>
+            <div class="skill-card"><img src="flutter.svg" alt="GraphQL">
+                <p>Flutter</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="title">
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="dataquest1.jpg" alt="Project Screenshot" class="project-img">
+                <img src="dataquest.png" alt="Project Screenshot" class="project-img">
+                <h3>DataQuest</h3>
+                <p>A survey-creation-collection website built with React and Node.js, enabling users to create, share,
+                    and analyze surveys.
+                    Designed with a responsive interface and visualizations for smooth user experience.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="yatra.png" alt="Project Screenshot" class="project-img">
+                <img src="yatra1.jpg" alt="Project Screenshot" class="project-img">
+                <h3>Yatra</h3>
+                <p>A mobile app for booking flights and reserving hotels, developed with Flutter, Dart, and Firebase.
+                    Provides an intuitive UI with secure real-time booking and data management.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="kakshya1.jpg" alt="Project Screenshot" class="project-img">
+                <img src="kakshya2.jpg" alt="Project Screenshot" class="project-img">
+                <h3>Kakshya</h3>
+                <p>A school management web platform built using React, Node.js and MongoDB.
+                    Includes features for handling student records, schedules, and administrative tasks efficiently.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="math_game.jpg" alt="Project Screenshot" class="project-img">
+                <img src="math_game1.png" alt="Project Screenshot" class="project-img">
+                <h3>MeroMath</h3>
+                <p>A math learning web app developed using HTML, CSS, JavaScript, and LocalStorage.
+                    Built with 3 different mini games, with each mini game having its own concept and exercises.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="winkel.png" alt="Project Screenshot" class="project-img">
+                <h3>Winkel</h3>
+                <p>A multi-vendor e-commerce mobile app developed in Flutter, Dart with Firebase backend.
+                    Supports vendor management, product listings, and secure transactions.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="book.jpg" alt="Project Screenshot" class="project-img">
+                <img src="book1.jpg" alt="Project Screenshot" class="project-img">
+                <h3>Book Recommender</h3>
+                <p>A recommendation website developed with python that suggests books based on user preferences.
+                    Designed for quick searches and reading suggestions.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="football.jpg" alt="Project Screenshot" class="project-img">
+                <img src="football1.jpg" alt="Project Screenshot" class="project-img">
+                <h3>Football Data Analysis Website</h3>
+                <p>A data visualization platform built with Python, Streamlit, and Plotly,
+                    showcasing football datasets with interactive charts and insights.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="expertise" class="service">
+        <div class="title">
+            <h2>My Expertise</h2>
         </div>
 
         <div class="box">
@@ -144,11 +200,13 @@ window.onclick = function(e) {
                 <h5>Web Development</h5>
                 <div class="pra">
                     <p>I am proficient in a wide range of web development technologies, including HTML,
-                         CSS, JavaScript, and various frontend and backend frameworks. This allows me to build responsive layouts, 
-                         develop custom animations, and create interactive widgets that enhance the overall user experience.</p>
-                    
+                        CSS, JavaScript, and various frontend and backend frameworks. This allows me to build responsive
+                        layouts,
+                        develop custom animations, and create interactive widgets that enhance the overall user
+                        experience.</p>
+
                     <p style="text-align: center;">
-                        
+
                     </p>
                 </div>
             </div>
@@ -157,9 +215,12 @@ window.onclick = function(e) {
                 <i class="fa-solid fa-user"></i>
                 <h5>Front-End Development</h5>
                 <div class="pra">
-                    <p>My expertise in HTML, CSS, JavaScript, React, Flutter, and Dart empowers me to craft responsive and adaptive layouts, design custom animations tailored to user needs, and develop engaging interactive widgets, all aimed at delivering a seamless and intuitive user experience that drives satisfaction and usability.</p>
+                    <p>My expertise in HTML, CSS, JavaScript, React, Flutter, and Dart empowers me to craft responsive
+                        and adaptive layouts, design custom animations tailored to user needs, and develop engaging
+                        interactive widgets, all aimed at delivering a seamless and intuitive user experience that
+                        drives satisfaction and usability.</p>
                     <p style="text-align: center;">
-                        
+
                     </p>
                 </div>
             </div>
@@ -168,10 +229,12 @@ window.onclick = function(e) {
                 <i class="fa-solid fa-computer"></i>
                 <h5>Back-End Development</h5>
                 <div class="pra">
-                    <p>I utilize Python, Node.js, and other backend technologies alongside databases like MongoDB and Firebase to design secure, scalable architectures and implement seamless API integrations that ensure robust and efficient system performance.  </p>
-                    
+                    <p>I utilize Python, Node.js, and other backend technologies alongside databases like MongoDB and
+                        Firebase to design secure, scalable architectures and implement seamless API integrations that
+                        ensure robust and efficient system performance. </p>
+
                     <p style="text-align: center;">
-                        
+
                     </p>
                 </div>
             </div>
@@ -180,49 +243,52 @@ window.onclick = function(e) {
                 <i class="fa-solid fa-mobile"></i>
                 <h5>Mobile App Development</h5>
                 <div class="pra">
-                    <p>I have hands-on experience in building cross-platform mobile applications using Flutter, 
-                        integrated with Firebase for backend services such as authentication, real-time databases, and cloud storage. This combination allows me to deliver high-performance, and feature-rich mobile apps that work seamlessly on different platforms. </p>
-                    
+                    <p>I have hands-on experience in building cross-platform mobile applications using Flutter,
+                        integrated with Firebase for backend services such as authentication, real-time databases, and
+                        cloud storage. This combination allows me to deliver high-performance, and feature-rich mobile
+                        apps that work seamlessly on different platforms. </p>
+
                     <p style="text-align: center;">
-                        
+
                     </p>
                 </div>
             </div>
 
-            
+
 
 
         </div>
     </div>
 
     <footer>
-  <div class="footer-container">
-    <p class="footer-name">Nikki Kayastha</p>
-    
+        <div class="footer-container">
+            <p class="footer-name">Nikki Kayastha</p>
 
-    <div id="contact" class="contact-info">
-      <h4>
-        <i class="fa-solid fa-phone"></i>
-        <a>+977 9840179744</a>
-      </h4>
-      <h4>
-        <i class="fa-solid fa-envelope"></i>
-        <a id="openPopup">nikkikayastha0@gmail.com</a>
-      </h4>
-    </div>
-    
-    <div class="social">
-    <p class="checkout">Check out:</p>
-      <a href="https://www.linkedin.com/in/nikki-kayastha-7867022a5" target="_blank" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/nikissss" target="_blank" aria-label="GitHub">
-        <i class="fa-brands fa-github"></i>
-      </a>
-    </div>
-  </div>
-</footer>
+
+            <div id="contact" class="contact-info">
+                <h4>
+                    <i class="fa-solid fa-phone"></i>
+                    <a>+977 9840179744</a>
+                </h4>
+                <h4>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a id="openPopup">nikkikayastha0@gmail.com</a>
+                </h4>
+            </div>
+
+            <div class="social">
+                <p class="checkout">Check out:</p>
+                <a href="https://www.linkedin.com/in/nikki-kayastha-7867022a5" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/nikissss" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
+
 </html>
